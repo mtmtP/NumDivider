@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Num Divider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 onclick="window.location.reload();">Num Divider</h1>
+        <p>数を割る者</p>
+    </header>
+    <div id="wrapper">
+
+        <div id="content">
+            <div id = "comment-area" >
+                次々に登場する数字は割れるのか、割れないのか？<br>
+                割れると思う数字をクリックしてね！<br>
+                ↓レベルを選ぶとゲームスタート！
+            </div>
+
+            <div id = "indicate-area" class="clearfix">
+                <span id = "timer-area" ></span>
+                <span id = "point-area" ></span>
+            </div>
+
+            <div id = "largeNum-area" ></div>
+
+            <div id = "game-area" >
+                <div>
+                    <button id = "game1" class="levelButton" value = "1" onclick="gameApear(this)"><span>初級</span></button>
+                </div>
+                <div>
+                    <button id = "game2" class="levelButton" value = "2" onclick="gameApear(this)"><span>中級</span></button>
+                </div>
+                <div>
+                    <button id = "game3" class="levelButton" value = "3" onclick="gameApear(this)"><span>上級</span></button>
+                </div>
+                <div id = "rule">
+                    <h2>ルール説明</h2>
+                    <ul>
+                        <li>だいたい、やれば分かる！</li>
+                        <li>割り切れる数字をクリック！</li>
+                        <li>正解なら、選んだ数字の分のポイントをGET！</li>
+                        <li>どの数でも割り切れない場合は「素数だ！」ボタンをクリック！</li>
+                        <li>素数を当てると、お題の数字の平方根くらいのポイントをGET!しかもゲーム時間5秒追加！</li>
+                        <li>制限時間内に獲得したポイントの合計で勝負！</li>
+                    </ul>            
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+       
+    </footer>
+</body>
+<script src="numDivider5.js"></script>
+</html>
