@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 const content = document.getElementById("content");
 const gameArea = document.getElementById("game-area");
 const commentArea = document.getElementById("comment-area");
